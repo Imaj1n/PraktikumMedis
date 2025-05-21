@@ -38,7 +38,7 @@ genre = st.radio(
 
 # Jalankan dan simpan hasil ke session_state
 if uploaded_file is not None:
-    if genre == ":rainbow[otomatis]":
+    if genre == ":red[otomatis]":
         st.session_state.tabel_auto = auto_grid(uploaded_file)
     else:
         st.session_state.tabel_manual = manual_grid(uploaded_file)
