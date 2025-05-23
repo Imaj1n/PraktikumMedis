@@ -82,9 +82,9 @@ if "tabel_merge" in st.session_state:
         netOD,dosis_aktual = np.array(netOD),np.array(dosis_aktual)
         model = polynomial_regression(netOD, dosis_aktual, degree=3)
         
-        # Inisialisasi session_state untuk menyimpan data
-        if "data_tabel" not in st.session_state:
-            st.session_state.data_tabel = pd.DataFrame(columns=["Nama", "Usia", "Jenis Kelamin"])
+        # # Inisialisasi session_state untuk menyimpan data
+        # if "data_tabel" not in st.session_state:
+        #     st.session_state.data_tabel = pd.DataFrame(columns=["Nama", "Usia", "Jenis Kelamin"])
 
         # Form input data
         st.subheader("Input Data")
